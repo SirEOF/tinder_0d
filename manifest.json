@@ -2,8 +2,13 @@
 	"manifest_version": 2,
 	"name": "tinder_0d",
 	"description": "I don't like blured pictures :(",
-	"version": "XXX",
+	"version": "666",
 	"author": "daddy",
+	"icons": {
+		"16": "tab-icon.png",
+		"48": "tab-icon.png",
+		"128": "tab-icon.png"
+	},
 	"browser_action": {
 		"default_icon": "tab-icon.png",
 		"default_title": "unblur me",
