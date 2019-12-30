@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "tinder_0d",
+	"description": "I don't like blured pictures :(",
+	"version": "XXX",
+	"author": "daddy",
+	"browser_action": {
+		"default_icon": "tab-icon.png",
+		"default_title": "unblur me",
+		"default_popup": "description.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://tinder.com/*"],
+			"js": ["tinder_0d.js"]
+		}
+	]
+}
