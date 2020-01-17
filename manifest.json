@@ -12,12 +12,23 @@
 	"browser_action": {
 		"default_icon": "tab-icon.png",
 		"default_title": "unblur me",
-		"default_popup": "description.html"
+		"default_popup": "page.html"
+	},
+	"options_ui": {
+		"page": "page.html",
+		"open_in_tab": true
 	},
 	"content_scripts": [
 		{
 			"matches": ["https://tinder.com/*"],
 			"js": ["tinder_0d.js"]
 		}
-	]
+	],
+	"permissions": [
+		"storage"
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	}
 }
